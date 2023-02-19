@@ -10,15 +10,15 @@ main(void){
 	srand(time(NULL));
 	int random, num, reset;
 	random=rand() % 50;
-	printf("Insira um número: ");
+	printf("Insira um nÃºmero: ");
 	scanf("%d", &num);
 	
 	if(num<0){
-		printf("O número %d é um número negativo", num);	
+		printf("O nÃºmero %d Ã© um nÃºmero negativo", num);	
 	}else if(num>0){
-		printf("O número %d é um número Positivo", num);
+		printf("O nÃºmero %d Ã© um nÃºmero Positivo", num);
 	}else if(num==0){
-		printf("O seu número  é zero");
+		printf("O seu nÃºmero  Ã© zero");
 	}
 	return 0;
 	
