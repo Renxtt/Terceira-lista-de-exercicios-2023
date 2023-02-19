@@ -5,6 +5,8 @@
 #include <math.h>
 #include <time.h>
 
+//Escreva um programa em C que verifique se um número inteiro é positivo, negativo ou zero, e imprima a respectiva mensagem na tela.
+
 main(void){
 	setlocale(LC_ALL, "portuguese");
 	srand(time(NULL));
