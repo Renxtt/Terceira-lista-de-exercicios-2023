@@ -5,38 +5,40 @@
 #include <time.h>
 #include <string.h>
 
+//FaÃ§a um programa em C que solicite o nome e a idade do usuÃ¡rio, e verifique se ele Ã© maior de idade e se o seu nome Ã© igual a "JoÃ£o" ou "Maria", exibindo a mensagem correspondente na tela.
+
 int main(void){
 	int num, num2, num3;
 	setlocale(LC_ALL, "portuguese");
 
-	//solicite três números inteiros
-	printf("Digite um número: ");
+	//solicite trÃªs nÃºmeros inteiros
+	printf("Digite um nÃºmero: ");
 	scanf("%d", &num);
-	printf("Digite um segundo número: ");
+	printf("Digite um segundo nÃºmero: ");
 	scanf("%d", &num2);
-	printf("Digite um terceiro número: ");
+	printf("Digite um terceiro nÃºmero: ");
 	scanf("%d", &num3);	
-	//verifique qual é o maior e qual é o menor
+	//verifique qual Ã© o maior e qual Ã© o menor
 	if(num>num2&&num2>num3){
-		printf("O número %d é o maior e o menor número é %d", num, num3);
+		printf("O nÃºmero %d Ã© o maior e o menor nÃºmero Ã© %d", num, num3);
 		//TODO
 	}else if(num>num3&&num3>num2){
-		printf("O número %d é o maior e o menor número é %d", num, num2);
+		printf("O nÃºmero %d Ã© o maior e o menor nÃºmero Ã© %d", num, num2);
 		//TODO
 	}else if(num2>num&&num>num3){
-		printf("O número %d é o maior e o menor número é %d", num2, num3);
+		printf("O nÃºmero %d Ã© o maior e o menor nÃºmero Ã© %d", num2, num3);
 		//TODO
 	}else if(num2>num3&&num3>num){
-		printf("O número %d é o maior e o menor número é %d", num2, num);
+		printf("O nÃºmero %d Ã© o maior e o menor nÃºmero Ã© %d", num2, num);
 		//TODO
 	}else if(num3>num&&num>num2){
-		printf("O número %d é o maior e o menor número é %d", num3, num2);
+		printf("O nÃºmero %d Ã© o maior e o menor nÃºmero Ã© %d", num3, num2);
 		//TODO
 	}else if(num3>num2&&num2>num){
-		printf("O número %d é o maior e o menor número é %d", num3, num);
+		printf("O nÃºmero %d Ã© o maior e o menor nÃºmero Ã© %d", num3, num);
 		//TODO
 	}else if(num==num2||num==num3||num2==num3){
-		printf("Não existe número maior o número menor pois eles são iguais");
+		printf("NÃ£o existe nÃºmero maior o nÃºmero menor pois eles sÃ£o iguais");
 		//TODO
 	}
 	
