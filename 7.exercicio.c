@@ -5,6 +5,8 @@
 #include <time.h>
 #include <string.h>
 
+//Crie um programa em C que solicite o nome do usuário e verifique se ele é igual a "João" ou "Maria", exibindo a mensagem correspondente na tela.
+
 main(void){
 	setlocale(LC_ALL, "portuguese");
 	
