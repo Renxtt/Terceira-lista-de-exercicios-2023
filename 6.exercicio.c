@@ -5,20 +5,22 @@
 #include <time.h>
 #include <string.h>
 
+//Escreva um programa em C que solicite um nÃºmero inteiro e verifique se ele Ã© par ou Ã­mpar, exibindo a mensagem correspondente na tela.
+
 main(void){
 	setlocale(LC_ALL, "portuguese");
 	
 	int nub;
 
-	//solicite um número inteiro
-	printf("Digite um Número Inteiro: ");
+	//solicite um nÃºmero inteiro
+	printf("Digite um NÃºmero Inteiro: ");
 	scanf("%d", &nub);
-	//verifique se ele é par ou ímpar
+	//verifique se ele Ã© par ou Ã­mpar
 	if(nub % 2 ==0 ){
-		printf("Ele é par");
+		printf("Ele Ã© par");
 		//TODO
 	}else{
-		printf("Ele é impar");
+		printf("Ele Ã© impar");
 	}
 	
 	//exibindo a mensagem correspondente na tela
