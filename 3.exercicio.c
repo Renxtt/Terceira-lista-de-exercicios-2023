@@ -5,6 +5,8 @@
 #include <math.h>
 #include <time.h>
 
+// Escreva um programa em C que solicite dois números inteiros e verifique qual é o maior, exibindo o resultado na tela.
+
 main(void){
 	setlocale(LC_ALL,"portuguese");
 	int nu, nu2, dif, menor,maior, random, random2;
