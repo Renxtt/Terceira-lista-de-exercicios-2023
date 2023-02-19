@@ -5,6 +5,8 @@
 #include <time.h>
 #include <string.h>
 
+//FaÃ§a um programa em C que solicite o peso e a altura de uma pessoa, e calcule o seu Ã­ndice de massa corporal (IMC), exibindo a mensagem correspondente na tela (abaixo do peso, peso normal, sobrepeso, obesidade grau 1, obesidade grau 2 ou obesidade grau 3).
+
 int main(void){
 	setlocale(LC_ALL,"portuguese");
 	
@@ -14,36 +16,36 @@ int main(void){
 	
 	
 	//solicite o peso e a altura de uma pessoa
-	printf("Qual é o seu peso?:");
+	printf("Qual Ã© o seu peso?:");
 	scanf("%f", &peso);
-	printf("\nQual é o sua altura?:");
+	printf("\nQual Ã© o sua altura?:");
 	scanf("%f", &altura);
 	dois=2;
-	//calcule o seu índice de massa corporal (IMC)
+	//calcule o seu Ã­ndice de massa corporal (IMC)
 	piw=pow(altura,dois);
 	//printf("%f", piw);
 	resu=peso/piw;
-	printf("\nseu IMC é %f", resu);
+	printf("\nseu IMC Ã© %f", resu);
 	
 	
 	//exibindo a mensagem correspondente na tela
 	if(resu<=18.5){
-		printf("\nVocê está abaixo do peso");
+		printf("\nVocÃª estÃ¡ abaixo do peso");
 		//TODO
 	}else if(resu>=18.6&&resu<=24.9){
-		printf("\nVocê está com o peso normal");
+		printf("\nVocÃª estÃ¡ com o peso normal");
 		//TODO
 	}else if(resu>=25.0&&resu<=29.9){
-		printf("\nVocê está com Sobrepeso");
+		printf("\nVocÃª estÃ¡ com Sobrepeso");
 		//TODO
 	}else if(resu>=30.0&&resu<=34.9){
-		printf("\nVocê está com Obesidade Grau I");
+		printf("\nVocÃª estÃ¡ com Obesidade Grau I");
 		//TODO
 	}else if(resu>=35.0&&resu<=39.9){
-		printf("\nVocê está com Obesidade Grau II");
+		printf("\nVocÃª estÃ¡ com Obesidade Grau II");
 		//TODO
 	}else if(resu>=40.0){
-		printf("\nVocê está com Obesidade Grau III");
+		printf("\nVocÃª estÃ¡ com Obesidade Grau III");
 		//TODO
 	}
 	
