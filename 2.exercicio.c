@@ -8,13 +8,13 @@
 main(void){
 	setlocale(LC_ALL,"portuguese");
 	int idade, falta;
-	printf("Qual é a sua Idade: ");
+	printf("Qual Ã© a sua Idade: ");
 	scanf("%d", &idade);
 	falta=18-idade;
 	if(idade>=18){
-		printf("bem vinda à um programa com bastante sanguenolencia!!!");
+		printf("bem vinda Ã  um programa com bastante sanguenolencia!!!");
 	}else{
-		printf("sinto muito faltam %d para você chagar a idade Adulta!!!", falta);
+		printf("sinto muito faltam %d para vocÃª chagar a idade Adulta!!!", falta);
 		printf("\nSinto Muito!!!");
 		
 	}
