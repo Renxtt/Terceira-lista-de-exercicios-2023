@@ -5,6 +5,8 @@
 #include <time.h>
 #include <string.h>
 
+//Crie um programa em C que solicite uma letra e verifique se ela é uma vogal ou uma consoante, exibindo a mensagem correspondente na tela.
+
 main(void){
 	char let[40];
 	setlocale(LC_ALL,"portuguese");
