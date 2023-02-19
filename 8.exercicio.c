@@ -5,44 +5,35 @@
 #include <time.h>
 #include <string.h>
 
-//Faça um programa em C que solicite o nome e a idade do usuário, e verifique se ele é maior de idade e se o seu nome é igual a "João" ou "Maria", exibindo a mensagem correspondente na tela.
+//Faça um programa em C que solicite o nome e a idade do usuário, e verifique se ele é maior de idade e se o seu nome é igual a "João" ou "Maria", exibindo a mensagem correspondente na #include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <time.h>
+#include <string.h>
 
-int main(void){
-	int num, num2, num3;
+main(void){
 	setlocale(LC_ALL, "portuguese");
-
-	//solicite três números inteiros
-	printf("Digite um número: ");
-	scanf("%d", &num);
-	printf("Digite um segundo número: ");
-	scanf("%d", &num2);
-	printf("Digite um terceiro número: ");
-	scanf("%d", &num3);	
-	//verifique qual é o maior e qual é o menor
-	if(num>num2&&num2>num3){
-		printf("O número %d é o maior e o menor número é %d", num, num3);
+	int idade;
+	char nome[10];
+	//solicite o nome do usuário
+	printf("\nDigite um Nome: ");
+	scanf("%s", &nome);
+	printf("Qual é a sua Idade");
+	scanf("%d", &idade);
+	
+	//verifique se ele é igual a "João" ou "Maria"
+	if(strcmp(nome,"Joao")==0){
+		printf("O nome digitado é igual à João");
 		//TODO
-	}else if(num>num3&&num3>num2){
-		printf("O número %d é o maior e o menor número é %d", num, num2);
+	}else if(strcmp(nome,"Maria")==0){
+		printf("O nome digitado é igual à Maria");
 		//TODO
-	}else if(num2>num&&num>num3){
-		printf("O número %d é o maior e o menor número é %d", num2, num3);
-		//TODO
-	}else if(num2>num3&&num3>num){
-		printf("O número %d é o maior e o menor número é %d", num2, num);
-		//TODO
-	}else if(num3>num&&num>num2){
-		printf("O número %d é o maior e o menor número é %d", num3, num2);
-		//TODO
-	}else if(num3>num2&&num2>num){
-		printf("O número %d é o maior e o menor número é %d", num3, num);
-		//TODO
-	}else if(num==num2||num==num3||num2==num3){
-		printf("Não existe número maior o número menor pois eles são iguais");
+	}else if(strcmp(nome,"João")==1||strcmp(nome,"Maria")==1){
+		printf("Seu Nome não é João nem Maria");
 		//TODO
 	}
+	return 0;
+	// exibindo a mensagem correspondente na tela.
 	
-	//exibindo os resultados na tela.
-	
-return 0;	
-}
+}tela
